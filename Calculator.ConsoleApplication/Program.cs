@@ -25,10 +25,7 @@ namespace Calculator.ConsoleApplication
             Console.WriteLine($"Addition of numbers: { sum }");
         }
 
-        // sdsfdg stgert
-
-        // added by avi
-        // from branch 1
+       
     }
 
     
