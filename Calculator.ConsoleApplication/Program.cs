@@ -17,6 +17,8 @@ namespace Calculator.ConsoleApplication
             double secondNumber = Convert.ToDouble(Console.ReadLine());
             Addition(firstNumber, secondNumber);
             Subtraction(firstNumber, secondNumber);
+            Division(firstNumber, secondNumber);
+            Remainder(firstNumber, secondNumber);
             Console.WriteLine("--------------");
             Console.ReadKey();
         }
@@ -33,6 +35,19 @@ namespace Calculator.ConsoleApplication
         {
             double subtract = firstNumber - secondNumber;
             Console.WriteLine("Subtraction of Numbers: {0}", subtract);                
+        }
+
+        // Avinash
+        static void Division(double firstNumber, double secondNumber)
+        {
+            double quotient = firstNumber / secondNumber;
+            Console.WriteLine($"Division of Numbers: {quotient:0.000}");
+        }
+
+        static void Remainder(double firstNumber, double secondNumber)
+        {
+            double remainder = firstNumber % secondNumber;
+            Console.WriteLine($"Remainder of Numbers: {remainder:0.000}");
         }
     }
 
