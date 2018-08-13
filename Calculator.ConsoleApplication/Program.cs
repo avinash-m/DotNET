@@ -25,7 +25,7 @@ namespace Calculator.ConsoleApplication
             Console.WriteLine($"Addition of numbers: { sum }");
         }
 
-        
+       
     }
 
     
