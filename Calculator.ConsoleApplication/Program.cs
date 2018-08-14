@@ -25,8 +25,15 @@ namespace Calculator.ConsoleApplication
 
         static void Addition(double firstNumber, double secondNumber)
         {
-            double sum = firstNumber + secondNumber;
-            Console.WriteLine($"Addition of numbers: { sum }");
+            if (firstNumber > 0 && secondNumber > 0)
+            {
+                double sum = firstNumber + secondNumber;
+                Console.WriteLine($"Addition of numbers: { sum }");
+            }
+            else
+            {
+                Console.WriteLine("Addition: Numbers should be greater than zero.");
+            }
         }
 
         // Durga Subtraction code
@@ -40,14 +47,30 @@ namespace Calculator.ConsoleApplication
         // Avinash
         static void Division(double firstNumber, double secondNumber)
         {
-            double quotient = firstNumber / secondNumber;
-            Console.WriteLine($"Division of Numbers: {quotient:0.000}");
+            if(secondNumber > 0)
+            {
+                double quotient = firstNumber / secondNumber;
+                Console.WriteLine($"Division of Numbers: {quotient:0.000}");
+            }
+            else
+            {
+                Console.WriteLine("Division: Denominator cannot be zero.");
+            }
+            
         }
 
         static void Remainder(double firstNumber, double secondNumber)
         {
-            double remainder = firstNumber % secondNumber;
-            Console.WriteLine($"Remainder of Numbers: {remainder:0.000}");
+            if(secondNumber > 0)
+            {
+                double remainder = firstNumber % secondNumber;
+                Console.WriteLine($"Remainder of Numbers: {remainder:0.000}");
+            }
+            else
+            {
+                Console.WriteLine("Remainder: Denominator cannot be zero.");
+            }
+            
         }
     }
 
