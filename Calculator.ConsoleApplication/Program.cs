@@ -39,7 +39,6 @@ namespace Calculator.ConsoleApplication
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
         }
-
     }
 
     
